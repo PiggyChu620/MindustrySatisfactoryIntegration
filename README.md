@@ -2,8 +2,11 @@
 A Java Mindustry mod.
 
 A collection of realistic materials, resources, alloys, products, and compounds.
+
 It is designed to be as close to real-life procedure and realistic as possible, it's for those who don't mind designing complicated net of supply chains, it's REALLY complicated, you have been warned!
+
 I squeeze all productions into a single *Chemical Plant*, mostly because spriting is not my forte, just making this *Chemical Plant* have given me a good beating.
+
 New stuff will be constantly added.
 
 **Because some of the main ingredients require resources from both Serpulo and Erekir, so this mod only works on Sandboxes or Mixtech mods.**
