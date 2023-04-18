@@ -1,14 +1,14 @@
-package ma620;
+package rp620;
 
 import arc.util.*;
-import ma620.content.*;
+import rp620.content.*;
 import mindustry.mod.*;
 
 
-public class MA620Mod extends Mod
+public class RP620Mod extends Mod
 {
     //public static EC620NameGenerator nameGenerator;
-    public MA620Mod()
+    public RP620Mod()
     {
         /*if(Core.app.isMobile())
         {
@@ -44,16 +44,16 @@ public class MA620Mod extends Mod
     @Override
     public void init()
     {
-        MA620Setting.loadUI();
+        //RP620Setting.loadUI();
     }
     @Override
     public void loadContent()
     {
         Log.info("Loading Random Planet content.");
 
-        MA620Blocks.load();
-        MA620Planets.load();
-        MA620Setting.load();
+        RP620Items.load();
+        RP620Liquids.load();
+        RP620Blocks.load();
 
         Log.info("Random Planet loaded successfully.");
     }

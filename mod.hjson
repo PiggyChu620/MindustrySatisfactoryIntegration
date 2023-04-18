@@ -1,22 +1,22 @@
 #the mod name as displayed in-game
-displayName: "Mineable Alloys v1.1"
+displayName: "Realistic Materials/Resources/Alloys/Products/Compounds"
 
-repo: "PiggyChu620/MindustryRandomPlanet"
+repo: "PiggyChu620/MindustryRealisticProductions"
 
 #the internal name of your mod
-name: "ma620"
+name: "rp620"
 
 #your name
 author: "PiggyChu620"
 
 #the fully qualified main class of the mod
-main: "ma620.MA620Mod"
+main: "rp620.RP620Mod"
 
 #the mod description as seen in the mod dialog
-description: "Make all alloys/intermetallic directly mineable, currently only works on Serpulo and editor"
+description: "Collection of many overcomplicated realistic materials/resources/alloys/products/compounds"
 
 #the mod version
-version: 1.1
+version: 0.1
 
 #the minimum game build required to run this mod
 minGameVersion: 140

@@ -38,6 +38,7 @@ dependencies{
 
     annotationProcessor "com.github.Anuken:jabel:$jabelVersion"
 
+    implementation "com.github.liplum:MultiCrafterLib:v1.7"
 
 }
 
