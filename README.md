@@ -3,7 +3,7 @@ A Java Mindustry mod.
 
 A collection of realistic materials, resources, alloys, products, and compounds.
 
-It is designed to be as close to real-life procedure and realistic as possible, it's for those who don't mind designing complicated net of supply chains, it's REALLY complicated, you have been warned!
+It is designed to be as close to real-life procedure and realistic as possible, it's for those who don't mind designing complicated network of supply chains, it's REALLY complicated, you have been warned!
 
 New stuff will be constantly added.
 
