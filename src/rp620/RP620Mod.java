@@ -1,6 +1,8 @@
 package rp620;
 
+import arc.Events;
 import arc.util.*;
+import mindustry.game.EventType;
 import rp620.content.*;
 import mindustry.mod.*;
 
@@ -10,12 +12,12 @@ public class RP620Mod extends Mod
     //public static EC620NameGenerator nameGenerator;
     public RP620Mod()
     {
-        /*if(Core.app.isMobile())
-        {
+        //if(Core.app.isMobile())
+        //{
             //listen for game load event
-            Events.on(ClientLoadEvent.class, e -> {
+            Events.on(EventType.ClientLoadEvent.class, e -> {
                 //show dialog upon startup
-                Time.runTask(10f, () -> {
+                /*Time.runTask(10f, () -> {
                     Dialog.DialogStyle dd=new Dialog.DialogStyle();
 
                     dd.titleFont= Fonts.def;
@@ -33,9 +35,12 @@ public class RP620Mod extends Mod
                     //dialog.cont.image(Core.atlas.find("example-java-mod-frog")).pad(20f).row();
                     dialog.cont.button("OK", dialog::hide).size(100f, 50f);
                     dialog.show();
-                });
+                });*/
+                RP620Items.postProcess();
+                RP620Liquids.postProcess();
+                RP620TechTree.postProcess();
             });
-        }*/
+        //}
 
 
 
@@ -49,12 +54,12 @@ public class RP620Mod extends Mod
     @Override
     public void loadContent()
     {
-        Log.info("Loading Random Planet content.");
+        Log.info("Loading Realistic Productions content.");
 
         RP620Items.load();
         RP620Liquids.load();
         RP620Blocks.load();
 
-        Log.info("Random Planet loaded successfully.");
+        Log.info("Realistic Productions loaded successfully.");
     }
 }
