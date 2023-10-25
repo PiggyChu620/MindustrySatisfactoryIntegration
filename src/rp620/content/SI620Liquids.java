@@ -1,23 +1,15 @@
 package rp620.content;
 
 import arc.graphics.Color;
-import arc.struct.Seq;
-import mindustry.content.Fx;
 import mindustry.content.Liquids;
 import mindustry.content.StatusEffects;
-import mindustry.entities.effect.MultiEffect;
 import mindustry.type.CellLiquid;
 import mindustry.type.Liquid;
-import mindustry.world.consumers.ConsumeLiquid;
-import rp620.content.RP620Classes.AcidicLiquid;
-import rp620.content.RP620Classes.RP620Vars;
-import rp620.content.RP620Classes.SimplifiedTechNode;
+import rp620.content.SI620Classes.SimplifiedTechNode;
 
-import java.time.LocalDateTime;
+import static rp620.content.SI620Classes.SI620Vars.*;
 
-import static rp620.content.RP620Classes.RP620Vars.*;
-
-public class RP620Liquids
+public class SI620Liquids
 {//₀₁₂₃₄₅₆₇₈₉ₓ
     public static Liquid nitrogenOxide,nitrogenDioxide,ammonia,glycerin,nitricAcid,nitroglycerin,hydrazine;
     public static Liquid test_0_0,test_0_5,test_0_10,test_5_0,test_5_5,test_5_10,test_10_0,test_10_5,test_10_10;
@@ -67,8 +59,8 @@ public class RP620Liquids
             coolant=true;
             heatCapacity=0.196012166272f;
             alwaysUnlocked=true;
-            serpuloContents.add(new SimplifiedTechNode(RP620Items.lye,this,2));
-            allContents.add(new SimplifiedTechNode(RP620Items.lye,this,2));
+            serpuloContents.add(new SimplifiedTechNode(SI620Items.lye,this,2));
+            allContents.add(new SimplifiedTechNode(SI620Items.lye,this,2));
         }};
         nitricAcid=new Liquid("nitric-acid", Color.valueOf("ffff00"))
         {{

@@ -16,14 +16,14 @@ import multicraft.DrawRecipe;
 import multicraft.IOEntry;
 import multicraft.MultiCrafter;
 import multicraft.Recipe;
-import rp620.content.RP620Classes.SimplifiedTechNode;
+import rp620.content.SI620Classes.SimplifiedTechNode;
 
 import static arc.graphics.g2d.Draw.color;
 import static arc.graphics.g2d.Lines.lineAngle;
 import static arc.math.Angles.randLenVectors;
 import static mindustry.type.ItemStack.with;
 
-public class RP620Blocks
+public class SI620Blocks
 {
 	//Ores
 	public static Block oreSulfur;
@@ -39,7 +39,7 @@ public class RP620Blocks
 	public static void load()
 	{
 		//region Ores
-		oreSulfur=new OreBlock("ore-sulfur",RP620Items.sulfur)
+		oreSulfur=new OreBlock("ore-sulfur", SI620Items.sulfur)
 		{{
 			localizedName="Sulfur";
 		}};
@@ -65,7 +65,7 @@ public class RP620Blocks
 			serpuloBlocks.add(new SimplifiedTechNode(Blocks.pyratiteMixer,this,0));
 			allBlocks.add(new SimplifiedTechNode(Blocks.pyratiteMixer,this,0));
 		}};
-		chemicalPlant =new RP620MultiCrafter("chemical-plant")
+		chemicalPlant =new SI620MultiCrafter("chemical-plant")
 		{{
 			requirements(Category.crafting,with(Items.graphite,100,Items.silicon,100, Items.thorium,100));
 			localizedName="Chemical Plant";
@@ -90,7 +90,7 @@ public class RP620Blocks
 							new IOEntry(
 									Seq.with(),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.nitrogenOxide,.2f
+											SI620Liquids.nitrogenOxide,.2f
 									))
 							),
 							60
@@ -107,7 +107,7 @@ public class RP620Blocks
 							new IOEntry(
 									Seq.with(),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.nitrogenDioxide,.2f
+											SI620Liquids.nitrogenDioxide,.2f
 									))
 							),
 							60
@@ -116,7 +116,7 @@ public class RP620Blocks
 							new IOEntry(
 									Seq.with(),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.ammonia,.3f,
+											SI620Liquids.ammonia,.3f,
 											Liquids.ozone,.2f
 									)),
 									2
@@ -124,7 +124,7 @@ public class RP620Blocks
 							new IOEntry(
 									Seq.with(),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.nitrogenDioxide,.2f, Liquids.water,.3f
+											SI620Liquids.nitrogenDioxide,.2f, Liquids.water,.3f
 									))
 							),
 							60
@@ -141,7 +141,7 @@ public class RP620Blocks
 							new IOEntry(
 									Seq.with(),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.ammonia,.2f
+											SI620Liquids.ammonia,.2f
 									))
 							),
 							60
@@ -149,7 +149,7 @@ public class RP620Blocks
 					new Recipe(
 							new IOEntry(
 									Seq.with(ItemStack.with(
-											RP620Items.salt,2, Items.coal,1
+											SI620Items.salt,2, Items.coal,1
 									)),
 									Seq.with(LiquidStack.with(
 											Liquids.water,.2f
@@ -157,7 +157,7 @@ public class RP620Blocks
 									2
 							),
 							new IOEntry(
-									Seq.with(ItemStack.with(RP620Items.lye,2)),
+									Seq.with(ItemStack.with(SI620Items.lye,2)),
 									Seq.with()
 							),
 							60
@@ -165,7 +165,7 @@ public class RP620Blocks
 					new Recipe(
 							new IOEntry(
 									Seq.with(ItemStack.with(
-											RP620Items.lye,3
+											SI620Items.lye,3
 									)),
 									Seq.with(LiquidStack.with(
 											Liquids.oil,.1f
@@ -173,8 +173,8 @@ public class RP620Blocks
 									2
 							),
 							new IOEntry(
-									Seq.with(ItemStack.with(RP620Items.soap,3)),
-									Seq.with(LiquidStack.with(RP620Liquids.glycerin,.1f))
+									Seq.with(ItemStack.with(SI620Items.soap,3)),
+									Seq.with(LiquidStack.with(SI620Liquids.glycerin,.1f))
 							),
 							60
 					),
@@ -182,7 +182,7 @@ public class RP620Blocks
 							new IOEntry(
 									Seq.with(),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.nitrogenDioxide,.2f,
+											SI620Liquids.nitrogenDioxide,.2f,
 											Liquids.water,.1f
 									)),
 									2
@@ -190,7 +190,7 @@ public class RP620Blocks
 							new IOEntry(
 									Seq.with(),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.nitricAcid,.2f
+											SI620Liquids.nitricAcid,.2f
 									))
 							),
 							60
@@ -199,7 +199,7 @@ public class RP620Blocks
 							new IOEntry(
 									Seq.with(),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.nitrogenOxide,.2f,
+											SI620Liquids.nitrogenOxide,.2f,
 											Liquids.ozone,.1f,
 											Liquids.water,.1f
 									)),
@@ -208,7 +208,7 @@ public class RP620Blocks
 							new IOEntry(
 									Seq.with(),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.nitricAcid,.4f
+											SI620Liquids.nitricAcid,.4f
 									))
 							),
 							60
@@ -217,15 +217,15 @@ public class RP620Blocks
 							new IOEntry(
 									Seq.with(),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.glycerin,.3f,
-											RP620Liquids.nitricAcid,.1f
+											SI620Liquids.glycerin,.3f,
+											SI620Liquids.nitricAcid,.1f
 									)),
 									2
 							),
 							new IOEntry(
 									Seq.with(),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.nitroglycerin,.1f,
+											SI620Liquids.nitroglycerin,.1f,
 											Liquids.water,.3f
 									))
 							),
@@ -242,7 +242,7 @@ public class RP620Blocks
 							),
 							new IOEntry(
 									Seq.with(ItemStack.with(
-											RP620Items.celluloseFiber,1
+											SI620Items.celluloseFiber,1
 									)),
 									Seq.with()
 							),
@@ -251,16 +251,16 @@ public class RP620Blocks
 					new Recipe(
 							new IOEntry(
 									Seq.with(ItemStack.with(
-											RP620Items.celluloseFiber,3
+											SI620Items.celluloseFiber,3
 									)),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.nitroglycerin,.1
+											SI620Liquids.nitroglycerin,.1
 									)),
 									2
 							),
 							new IOEntry(
 									Seq.with(ItemStack.with(
-											RP620Items.dynamite,1
+											SI620Items.dynamite,1
 									)),
 									Seq.with()
 							),
@@ -269,20 +269,20 @@ public class RP620Blocks
 					new Recipe(
 							new IOEntry(
 									Seq.with(ItemStack.with(
-											RP620Items.dynamite,1
+											SI620Items.dynamite,1
 									)),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.nitricAcid,.8f
+											SI620Liquids.nitricAcid,.8f
 									)),
 									2
 							),
 							new IOEntry(
 									Seq.with(ItemStack.with(
-											RP620Items.onc,1
+											SI620Items.onc,1
 									)),
 									Seq.with(LiquidStack.with(
 											Liquids.water,.7f,
-												  RP620Liquids.nitrogenDioxide,.8f
+												  SI620Liquids.nitrogenDioxide,.8f
 									))
 							),
 							60
@@ -291,7 +291,7 @@ public class RP620Blocks
 							new IOEntry(
 									Seq.with(),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.ammonia,.2f,
+											SI620Liquids.ammonia,.2f,
 											Liquids.nitrogen,.1f
 									)),
 									2
@@ -300,7 +300,7 @@ public class RP620Blocks
 									Seq.with(),
 									Seq.with(LiquidStack.with(
 											Liquids.hydrogen,.1f,
-											RP620Liquids.hydrazine,.1f
+											SI620Liquids.hydrazine,.1f
 									))
 							),
 							60
@@ -309,14 +309,14 @@ public class RP620Blocks
 							new IOEntry(
 									Seq.with(),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.hydrazine,.3f,
-											RP620Liquids.nitrogenDioxide,.4f
+											SI620Liquids.hydrazine,.3f,
+											SI620Liquids.nitrogenDioxide,.4f
 									)),
 									2
 							),
 							new IOEntry(
 									Seq.with(ItemStack.with(
-											RP620Items.azidoazideAzide,1
+											SI620Items.azidoazideAzide,1
 									)),
 									Seq.with(LiquidStack.with(
 											Liquids.water,.6f,
@@ -328,16 +328,16 @@ public class RP620Blocks
 					new Recipe(
 							new IOEntry(
 									Seq.with(ItemStack.with(
-											RP620Items.azidoazideAzide,1
+											SI620Items.azidoazideAzide,1
 									)),
 									Seq.with(LiquidStack.with(
-											RP620Liquids.hydrazine,.4f
+											SI620Liquids.hydrazine,.4f
 									)),
 									2
 							),
 							new IOEntry(
 									Seq.with(ItemStack.with(
-											RP620Items.oac,1
+											SI620Items.oac,1
 									)),
 									Seq.with(LiquidStack.with(
 											Liquids.nitrogen,.4f
@@ -383,7 +383,7 @@ public class RP620Blocks
 																	   ),
 															   new IOEntry
 																	   (
-																			   Seq.with(ItemStack.with(RP620Items.ice,1)),
+																			   Seq.with(ItemStack.with(SI620Items.ice,1)),
 																			   Seq.with()
 																	   ),
 															   60		//60 = 1s
@@ -402,7 +402,7 @@ public class RP620Blocks
 																	   ),
 															   new IOEntry
 																	   (
-																			   Seq.with(ItemStack.with(RP620Items.sludge,1)),
+																			   Seq.with(ItemStack.with(SI620Items.sludge,1)),
 																			   Seq.with()
 																	   ),
 															   60
@@ -417,7 +417,7 @@ public class RP620Blocks
 																	   ),
 															   new IOEntry
 																	   (
-																			   Seq.with(ItemStack.with(RP620Items.cryocube,1)),
+																			   Seq.with(ItemStack.with(SI620Items.cryocube,1)),
 																			   Seq.with()
 																	   ),
 															   60
@@ -436,7 +436,7 @@ public class RP620Blocks
 																	   ),
 															   new IOEntry
 																	   (
-																			   Seq.with(ItemStack.with(RP620Items.wax,1)),
+																			   Seq.with(ItemStack.with(SI620Items.wax,1)),
 																			   Seq.with()
 																	   ),
 															   60
@@ -455,7 +455,7 @@ public class RP620Blocks
 																	   ),
 															   new IOEntry
 																	   (
-																			   Seq.with(ItemStack.with(RP620Items.arkyciteIce,1)),
+																			   Seq.with(ItemStack.with(SI620Items.arkyciteIce,1)),
 																			   Seq.with()
 																	   ),
 															   60
@@ -474,7 +474,7 @@ public class RP620Blocks
 																	   ),
 															   new IOEntry
 																	   (
-																			   Seq.with(ItemStack.with(RP620Items.neoplasmIce,1)),
+																			   Seq.with(ItemStack.with(SI620Items.neoplasmIce,1)),
 																			   Seq.with()
 																	   ),
 															   60
@@ -506,7 +506,7 @@ public class RP620Blocks
 													   (
 															   new IOEntry
 																	   (
-																			   Seq.with(ItemStack.with(RP620Items.ice,1)),
+																			   Seq.with(ItemStack.with(SI620Items.ice,1)),
 																			   Seq.with(LiquidStack.with(Liquids.slag,.2f)),
 																			   2		//1 = 60 Power
 																	   ),
@@ -521,7 +521,7 @@ public class RP620Blocks
 													   (
 															   new IOEntry
 																	   (
-																			   Seq.with(ItemStack.with(RP620Items.sludge,1)),
+																			   Seq.with(ItemStack.with(SI620Items.sludge,1)),
 																			   Seq.with(LiquidStack.with(Liquids.slag,.2f)),
 																			   2
 																	   ),
@@ -536,7 +536,7 @@ public class RP620Blocks
 													   (
 															   new IOEntry
 																	   (
-																			   Seq.with(ItemStack.with(RP620Items.cryocube,1)),
+																			   Seq.with(ItemStack.with(SI620Items.cryocube,1)),
 																			   Seq.with(LiquidStack.with(Liquids.slag,.2f)),
 																			   2
 																	   ),
@@ -551,7 +551,7 @@ public class RP620Blocks
 													   (
 															   new IOEntry
 																	   (
-																			   Seq.with(ItemStack.with(RP620Items.wax,1)),
+																			   Seq.with(ItemStack.with(SI620Items.wax,1)),
 																			   Seq.with(LiquidStack.with(Liquids.slag,.2f)),
 																			   2
 																	   ),
@@ -566,7 +566,7 @@ public class RP620Blocks
 													   (
 															   new IOEntry
 																	   (
-																			   Seq.with(ItemStack.with(RP620Items.arkyciteIce,1)),
+																			   Seq.with(ItemStack.with(SI620Items.arkyciteIce,1)),
 																			   Seq.with(LiquidStack.with(Liquids.slag,.2f)),
 																			   2
 																	   ),
@@ -581,7 +581,7 @@ public class RP620Blocks
 													   (
 															   new IOEntry
 																	   (
-																			   Seq.with(ItemStack.with(RP620Items.neoplasmIce,1)),
+																			   Seq.with(ItemStack.with(SI620Items.neoplasmIce,1)),
 																			   Seq.with(LiquidStack.with(Liquids.slag,.2f)),
 																			   2
 																	   ),

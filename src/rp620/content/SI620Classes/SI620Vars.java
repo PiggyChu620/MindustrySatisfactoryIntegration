@@ -1,8 +1,8 @@
-package rp620.content.RP620Classes;
+package rp620.content.SI620Classes;
 
 import arc.struct.Seq;
 
-public class RP620Vars
+public class SI620Vars
 {
     public static Seq<SimplifiedTechNode> serpuloContents=new Seq<>();
     public static Seq<SimplifiedTechNode> erekirContents=new Seq<>();

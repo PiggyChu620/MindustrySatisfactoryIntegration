@@ -1,7 +1,4 @@
-package rp620.content.RP620Classes.Autocrafters;
-
-import arc.util.Nullable;
-import mindustry.type.ItemStack;
+package rp620.content.SI620Classes.Autocrafters;
 
 public class Recipe
 {

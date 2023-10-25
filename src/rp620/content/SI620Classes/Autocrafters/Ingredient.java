@@ -1,4 +1,4 @@
-package rp620.content.RP620Classes.Autocrafters;
+package rp620.content.SI620Classes.Autocrafters;
 
 import mindustry.type.ItemStack;
 import mindustry.type.LiquidStack;

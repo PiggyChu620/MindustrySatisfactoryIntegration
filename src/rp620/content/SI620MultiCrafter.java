@@ -1,8 +1,6 @@
 package rp620.content;
 
 import arc.Core;
-import arc.func.Func;
-import arc.func.Prov;
 import arc.graphics.Color;
 import arc.graphics.g2d.Draw;
 import arc.math.Interp;
@@ -15,19 +13,14 @@ import arc.struct.Seq;
 import arc.util.Log;
 import arc.util.Time;
 import mindustry.Vars;
-import mindustry.content.Blocks;
 import mindustry.core.UI;
 import mindustry.gen.Building;
-import mindustry.gen.Call;
 import mindustry.gen.Tex;
 import mindustry.graphics.Pal;
 import mindustry.type.ItemStack;
 import mindustry.type.LiquidStack;
 import mindustry.ui.Bar;
 import mindustry.ui.Styles;
-import mindustry.world.blocks.distribution.StackConveyor;
-import mindustry.world.consumers.ConsumeLiquid;
-import mindustry.world.consumers.ConsumeLiquids;
 import mindustry.world.meta.Stat;
 import mindustry.world.meta.StatUnit;
 import multicraft.MultiCrafter;
@@ -37,9 +30,9 @@ import multicraft.RecipeSelector;
 import static mindustry.Vars.tilesize;
 import static mindustry.Vars.world;
 
-public class RP620MultiCrafter extends MultiCrafter
+public class SI620MultiCrafter extends MultiCrafter
 {
-    public RP620MultiCrafter(String name)
+    public SI620MultiCrafter(String name)
     {
         super(name);
     }

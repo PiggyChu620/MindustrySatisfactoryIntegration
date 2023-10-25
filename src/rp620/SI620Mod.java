@@ -7,10 +7,10 @@ import rp620.content.*;
 import mindustry.mod.*;
 
 
-public class RP620Mod extends Mod
+public class SI620Mod extends Mod
 {
     //public static EC620NameGenerator nameGenerator;
-    public RP620Mod()
+    public SI620Mod()
     {
         //if(Core.app.isMobile())
         //{
@@ -36,9 +36,9 @@ public class RP620Mod extends Mod
                     dialog.cont.button("OK", dialog::hide).size(100f, 50f);
                     dialog.show();
                 });*/
-                RP620Items.postProcess();
-                RP620Liquids.postProcess();
-                RP620TechTree.postProcess();
+                SI620Items.postProcess();
+                SI620Liquids.postProcess();
+                SI620TechTree.postProcess();
             });
         //}
 
@@ -56,9 +56,9 @@ public class RP620Mod extends Mod
     {
         Log.info("Loading Realistic Productions content.");
 
-        RP620Items.load();
-        RP620Liquids.load();
-        RP620Blocks.load();
+        SI620Items.load();
+        SI620Liquids.load();
+        SI620Blocks.load();
 
         Log.info("Realistic Productions loaded successfully.");
     }

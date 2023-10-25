@@ -1,4 +1,4 @@
-package rp620.content.RP620Classes;
+package rp620.content.SI620Classes;
 
 import mindustry.ctype.UnlockableContent;
 

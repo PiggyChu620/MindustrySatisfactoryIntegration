@@ -4,13 +4,13 @@ displayName: "Realistic Materials/Resources/Alloys/Products/Compounds"
 repo: "PiggyChu620/MindustryRealisticProductions"
 
 #the internal name of your mod
-name: "rp620"
+name: "si620"
 
 #your name
 author: "PiggyChu620"
 
 #the fully qualified main class of the mod
-main: "rp620.RP620Mod"
+main: "si620.SI620Mod"
 
 #the mod description as seen in the mod dialog
 description: "Collection of many overcomplicated realistic materials/resources/alloys/products/compounds"

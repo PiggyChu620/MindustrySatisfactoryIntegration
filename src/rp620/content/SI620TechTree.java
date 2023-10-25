@@ -1,20 +1,16 @@
 package rp620.content;
 
-import arc.struct.ObjectMap;
 import arc.struct.Seq;
-import arc.util.Log;
 import mindustry.content.Planets;
-import mindustry.content.SerpuloTechTree;
 import mindustry.content.TechTree;
-import mindustry.ctype.ContentType;
 import mindustry.ctype.UnlockableContent;
 import mindustry.game.Objectives;
 import mindustry.type.ItemStack;
 import mindustry.type.Planet;
-import rp620.content.RP620Classes.SimplifiedTechNode;
-import static rp620.content.RP620Classes.RP620Vars.*;
+import rp620.content.SI620Classes.SimplifiedTechNode;
+import static rp620.content.SI620Classes.SI620Vars.*;
 
-public class RP620TechTree extends TechTree
+public class SI620TechTree extends TechTree
 {
     static TechTree.TechNode context;
     static Planet curPlanet;
@@ -34,15 +30,15 @@ public class RP620TechTree extends TechTree
         {
             mergeNode(stn.parent,()->{nodeProduce(stn.content,()->{});},null);
         }
-        for(SimplifiedTechNode stn:RP620Blocks.serpuloBlocks.sort(x->x.priority))
+        for(SimplifiedTechNode stn: SI620Blocks.serpuloBlocks.sort(x->x.priority))
         {
             mergeNode(stn.parent,()->{node(stn.content,()->{});},Planets.serpulo);
         }
-        for(SimplifiedTechNode stn:RP620Blocks.erekirBlocks.sort(x->x.priority))
+        for(SimplifiedTechNode stn: SI620Blocks.erekirBlocks.sort(x->x.priority))
         {
             mergeNode(stn.parent,()->{node(stn.content,()->{});},Planets.erekir);
         }
-        for(SimplifiedTechNode stn:RP620Blocks.allBlocks.sort(x->x.priority))
+        for(SimplifiedTechNode stn: SI620Blocks.allBlocks.sort(x->x.priority))
         {
             mergeNode(stn.parent,()->{node(stn.content,()->{});},null);
         }

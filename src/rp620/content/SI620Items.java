@@ -2,19 +2,16 @@ package rp620.content;
 
 import arc.graphics.Color;
 import arc.math.Rand;
-import arc.struct.ObjectMap;
-import arc.struct.Seq;
 import mindustry.content.Blocks;
 import mindustry.content.Items;
 import mindustry.content.Liquids;
 import mindustry.type.Item;
-import mindustry.type.ItemStack;
-import rp620.content.RP620Classes.SimplifiedTechNode;
-import static rp620.content.RP620Classes.RP620Vars.*;
+import rp620.content.SI620Classes.SimplifiedTechNode;
+import static rp620.content.SI620Classes.SI620Vars.*;
 
 import java.time.LocalDateTime;
 
-public class RP620Items
+public class SI620Items
 {
     public static Item sulfur,salt,lye,soap,celluloseFiber,dynamite,onc,azidoazideAzide,oac;
     public static Item ice,sludge,cryocube,arkyciteIce,neoplasmIce,oxygenIce,wax,galliumIce,hydrogenIce,nitrogenIce,cyanogenIce;
@@ -142,7 +139,7 @@ public class RP620Items
     }
     public static void postProcess()
     {
-        erekirContents.add(new SimplifiedTechNode(RP620Liquids.hydrazine,azidoazideAzide,2));
-        allContents.add(new SimplifiedTechNode(RP620Liquids.hydrazine,azidoazideAzide,2));
+        erekirContents.add(new SimplifiedTechNode(SI620Liquids.hydrazine,azidoazideAzide,2));
+        allContents.add(new SimplifiedTechNode(SI620Liquids.hydrazine,azidoazideAzide,2));
     }
 }

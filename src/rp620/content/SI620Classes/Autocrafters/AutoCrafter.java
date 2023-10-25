@@ -1,19 +1,12 @@
-package rp620.content.RP620Classes.Autocrafters;
+package rp620.content.SI620Classes.Autocrafters;
 
-import arc.math.Mathf;
 import arc.struct.EnumSet;
 import arc.struct.Seq;
-import arc.util.ArcRuntimeException;
 import arc.util.Log;
-import mindustry.content.Blocks;
 import mindustry.gen.Sounds;
 import mindustry.world.Block;
-import mindustry.world.consumers.ConsumeItemDynamic;
 import mindustry.world.meta.BlockFlag;
-import multicraft.ConsumeFluidDynamic;
 import multicraft.MultiCrafter;
-import multicraft.MultiCrafterAnalyzer;
-import multicraft.RecipeSelector;
 
 public class AutoCrafter extends Block
 {
