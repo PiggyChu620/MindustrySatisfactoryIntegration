@@ -6,18 +6,29 @@ import mindustry.content.Fx;
 import mindustry.content.Liquids;
 import mindustry.content.StatusEffects;
 import mindustry.entities.effect.MultiEffect;
+import mindustry.type.CellLiquid;
 import mindustry.type.Liquid;
+import mindustry.world.consumers.ConsumeLiquid;
+import rp620.content.RP620Classes.AcidicLiquid;
 import rp620.content.RP620Classes.RP620Vars;
 import rp620.content.RP620Classes.SimplifiedTechNode;
+
+import java.time.LocalDateTime;
+
 import static rp620.content.RP620Classes.RP620Vars.*;
 
 public class RP620Liquids
 {//₀₁₂₃₄₅₆₇₈₉ₓ
     public static Liquid nitrogenOxide,nitrogenDioxide,ammonia,glycerin,nitricAcid,nitroglycerin,hydrazine;
-
+    public static Liquid test_0_0,test_0_5,test_0_10,test_5_0,test_5_5,test_5_10,test_10_0,test_10_5,test_10_10;
 
     public static void load()
     {
+        Liquids.gallium=new CellLiquid("gallium",Color.valueOf("9a9dbf"))
+        {{
+            coolant=false;
+
+        }};
         nitrogenOxide=new Liquid("nitrogen-oxide", Color.valueOf("0077be"))
         {{
             localizedName="Nitrogen Oxide";
@@ -43,7 +54,8 @@ public class RP620Liquids
             localizedName="Ammonia";
             gas=true;
             alwaysUnlocked=true;
-            //TBD
+            coolant=true;
+            heatCapacity=0.342683338966f;
             erekirContents.add(new SimplifiedTechNode(Liquids.nitrogen,this,0));
             allContents.add(new SimplifiedTechNode(Liquids.nitrogen,this,0));
         }};
@@ -52,17 +64,18 @@ public class RP620Liquids
             localizedName="Glycerin";
             viscosity=0.75f;
             explosiveness=0.75f;
-            coolant=false;
+            coolant=true;
+            heatCapacity=0.196012166272f;
             alwaysUnlocked=true;
             serpuloContents.add(new SimplifiedTechNode(RP620Items.lye,this,2));
             allContents.add(new SimplifiedTechNode(RP620Items.lye,this,2));
         }};
-        nitricAcid=new Liquid("nitric-acid",Color.valueOf("ffff00"))
+        nitricAcid=new Liquid("nitric-acid", Color.valueOf("ffff00"))
         {{
             localizedName="Nitric Acid";
-            heatCapacity=0.14f;
             viscosity=0.6f;
             coolant=false;
+            heatCapacity=0.114903683677f;
             alwaysUnlocked=true;
             erekirContents.add(new SimplifiedTechNode(Liquids.ozone,this,0));
             allContents.add(new SimplifiedTechNode(Liquids.ozone,this,0));
@@ -70,20 +83,23 @@ public class RP620Liquids
         nitroglycerin=new Liquid("nitroglycerin", Color.valueOf("ff3f3f"))
         {{
             localizedName="Nitroglycerin";
-            temperature=0.75f;
             flammability=10;
             viscosity=.35f;
             explosiveness=1.54f;
             coolant=false;
+            heatCapacity=0.0337952010814f;
             effect= StatusEffects.blasted;
             alwaysUnlocked=true;
             allContents.add(new SimplifiedTechNode(glycerin,this,3));
         }};
         hydrazine=new Liquid("hydrazine",Color.purple)
         {{
+
             localizedName="Hydrazine";
-            flammability=5;
-            explosiveness=.5f;
+            flammability=0;
+            explosiveness=0;
+            coolant=true;
+            heatCapacity=0.162216965191f;
             alwaysUnlocked=true;
             erekirContents.add(new SimplifiedTechNode(ammonia,this,1));
             allContents.add(new SimplifiedTechNode(ammonia,this,1));
